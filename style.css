@@ -1,0 +1,59 @@
+/***  Benjazor - 01/15/2020 ***/
+/**********   VARIABLES   **********/
+:root {
+    --content-carousel-height: 30em;
+    --content-carousel-width: 100%;
+    --content-carousel-controls-color: #000;
+}
+
+
+
+/**********   CAROUSEL STYLE   **********/
+/*  MAIN CONTAINER  */
+#content-carousel {
+    height: var(--content-carousel-height);
+    width: var(--content-carousel-width);
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+/*  CONTROLS  */
+#content-carousel > button {
+    width: 5rem; height: 5rem;
+    border-radius: 50%;
+
+    border: none;
+
+    display: flex; justify-content: center; align-items: center;
+    
+    background-color: inherit;
+    outline: none;
+
+}
+
+#content-carousel > button:hover { cursor: pointer; }
+
+#content-carousel > button > svg {
+    width: 3rem; height: 3rem;
+    fill: var(--content-carousel-controls-color);
+}
+
+
+
+/*  ITEMS CONTAINER  */
+#content-carousel-items {
+    width: 80%; height: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+}
+
+
+
+/*  ITEMS  */
+#content-carousel-items div { width: 30%; height: 100%; }
